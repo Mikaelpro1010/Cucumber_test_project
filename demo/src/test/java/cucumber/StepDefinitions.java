@@ -26,12 +26,12 @@ public class StepDefinitions {
     @When("User enters a name on username field")
     public void user_enters_a_name_on_name_field_scenario() {
 
-        loginPage.preecherCampoXpath("//*[@id=\"username\"]", "tomsmith");
+        loginPage.preencherCampoXpath("//*[@id=\"username\"]", "tomsmith");
     }
 
     @When("User enters an password on password field")
     public void user_enters_an_password_on_password_field() {
-        loginPage.preecherCampoXpath("//*[@id=\"password\"]", "SuperSecretPassword!");     
+        loginPage.preencherCampoXpath("//*[@id=\"password\"]", "SuperSecretPassword!");     
     }
     
     @Then("User should be redirectioned to SignUp page")
