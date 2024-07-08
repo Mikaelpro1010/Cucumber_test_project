@@ -14,4 +14,12 @@ public class LoginPage extends BasePage {
         .implicitlyWait(Duration.ofSeconds(2))
         .pageLoadTimeout(Duration.ofSeconds(10));
     }
+
+    public void clicarLogin(String xpath){
+        driver.findElement(By.xpath(xpath)).click();
+    }
+
+    public void preencherCampoXpath(String xpath, String texto){
+        driver.findElement(By.xpath(xpath)).sendKeys(texto);
+    }    
 }
