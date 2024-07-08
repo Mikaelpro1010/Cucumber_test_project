@@ -9,7 +9,7 @@ public class LoginPage extends BasePage {
     
     public LoginPage(){
         this.driver = new ChromeDriver();
-        this.driver.get("");
+        this.driver.get("https://the-internet.herokuapp.com/login");
         this.driver.manage().timeouts()
         .implicitlyWait(Duration.ofSeconds(2))
         .pageLoadTimeout(Duration.ofSeconds(10));
