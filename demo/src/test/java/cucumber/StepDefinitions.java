@@ -36,6 +36,6 @@ public class StepDefinitions {
     @Then("User should be redirectioned to SignUp page")
     public void user_should_be_redirectioned_to_sign_up_page() {
         loginPage.paginaCerta("https://the-internet.herokuapp.com/secure");
-        loginPage.verificarTextoPorXpath("/html/body/section/div/div/div/div[1]/h2/b","You logged into a secure area!");
+        loginPage.verificarTextoPorXpath("//*[@id=\"flash\"]","You logged into a secure area!");
     }
 }
