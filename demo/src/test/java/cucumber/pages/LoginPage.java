@@ -30,5 +30,9 @@ public class LoginPage extends BasePage {
     public boolean paginaCerta(String urlEsperada){
         return driver.getCurrentUrl().equals(urlEsperada);
     }
+
+    public boolean verificarTextoPorXpath(String xpath, String string){
+        return driver.findElement(By.xpath(xpath)).getText().equals(string);
+    }
     
 }
