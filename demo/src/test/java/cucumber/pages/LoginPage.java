@@ -21,5 +21,14 @@ public class LoginPage extends BasePage {
 
     public void preencherCampoXpath(String xpath, String texto){
         driver.findElement(By.xpath(xpath)).sendKeys(texto);
-    }    
+    }
+    
+    public void clicarXpath(String xpath){
+        driver.findElement(By.xpath(xpath)).click();
+    }
+
+    public boolean paginaCerta(String urlEsperada){
+        return driver.getCurrentUrl().equals(urlEsperada);
+    }
+    
 }
