@@ -10,5 +10,7 @@ import io.cucubmer.java.en.When;
 
 
 public class StepDefinitions {
+    private LoginPage loginPage;
+    private Random rand;
     
 }
