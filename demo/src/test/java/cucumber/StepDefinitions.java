@@ -33,8 +33,8 @@ public class StepDefinitions {
         loginPage.preencherCampoXpath("//*[@id=\"password\"]", "SuperSecretPassword!");     
     }
     
-    @Then("User should be redirectioned to SignUp page")
-    public void user_should_be_redirectioned_to_sign_up_page() {
+    @Then("User should be redirectioned to Secure Area page")
+    public void user_should_be_redirectioned_to_secure_area_page() {
         loginPage.paginaCerta("https://the-internet.herokuapp.com/secure");
         loginPage.verificarTextoPorXpath("//*[@id=\"flash\"]","You logged into a secure area!");
     }
